@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered E-commerce Product Description Writing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">AI Product Writer</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#contact">Contact & Follow Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <h1>Revolutionize Your E-commerce with AI-Powered Product Descriptions</h1>
+            <p class="animated-tagline">Transform bland product listings into compelling narratives that drive sales and engage customers.</p>
+            <a href="#demo" class="cta-button">Try the Demo</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Our AI Technology</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our innovative AI platform leverages state-of-the-art machine learning to craft personalized, SEO-friendly product narratives that captivate shoppers and boost engagement.</p>
+                    <p>By processing product specifics, audience insights, and brand voice, it generates compelling copy that stands out in crowded marketplaces, driving higher click-throughs and sales.</p>
+                    <ul class="about-icons">
+                        <li><i class="fas fa-brain"></i> Advanced AI Algorithms</li>
+                        <li><i class="fas fa-search"></i> SEO Optimization</li>
+                        <li><i class="fas fa-magic"></i> Creative Generation</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>85%</h3>
+                        <p>Average increase in conversion rates</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10x</h3>
+                        <p>Faster than manual writing</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>E-commerce categories supported</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-edit"></i>
+                    <h3>Input Details</h3>
+                    <p>Provide product name, key features, target audience, and desired tone.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gear"></i>
+                    <h3>AI Analysis</h3>
+                    <p>Our AI analyzes your input to understand context and requirements.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Generate Description</h3>
+                    <p>Instantly create compelling, persuasive product descriptions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-image"></i>
+                    <h3>Output & Optimize</h3>
+                    <p>Get SEO-optimized text ready for your e-commerce platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-product="phone">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <button class="view-btn">View Transformation</button>
+                </div>
+                <div class="project-card" data-product="laptop">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <button class="view-btn">View Transformation</button>
+                </div>
+                <div class="project-card" data-product="smartwatch">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <button class="view-btn">View Transformation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="before-section">
+                    <h3>Before Product Description</h3>
+                    <p id="before-title" class="plain-text"></p>
+                </div>
+                <hr class="divider">
+                <div class="after-section">
+                    <h3>After AI Product Description</h3>
+                    <div id="after-description" class="enhanced-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="demo">
+        <div class="container">
+            <h2>Try Our AI Demo</h2>
+            <form id="description-form">
+                <div class="step step-1">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="step-content">
+                        <label for="product-name">Product Name:</label>
+                        <input type="text" id="product-name" placeholder="e.g., Wireless Headphones" required>
+                    </div>
+                </div>
+                <div class="step step-2">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="step-content">
+                        <label for="key-features">Key Features (comma-separated):</label>
+                        <input type="text" id="key-features" placeholder="e.g., waterproof, 20-hour battery, portable" required>
+                    </div>
+                </div>
+                <div class="step step-3">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="step-content">
+                        <label for="target-audience">Target Audience:</label>
+                        <input type="text" id="target-audience" placeholder="e.g., music lovers, travelers, fitness enthusiasts" required>
+                    </div>
+                </div>
+                <div class="step step-4">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="step-content">
+                        <label for="tone">Desired Tone:</label>
+                        <select id="tone">
+                            <option value="professional">Professional</option>
+                            <option value="casual">Casual</option>
+                            <option value="enthusiastic">Enthusiastic</option>
+                            <option value="luxurious">Luxurious</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="generate-btn">Generate Description</button>
+            </form>
+            <div id="generated-description" class="generated-result" style="display: none;">
+                <div class="result-container">
+                    <div class="description-column">
+                        <h3>Your AI-Generated Description:</h3>
+                        <p id="description-text"></p>
+                        <button id="copy-btn" class="copy-btn">Copy to Clipboard</button>
+                    </div>
+                    <div class="image-column" style="display: none;">
+                        <img id="product-image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkxvYWRpbmcgSW1hZ2UuLi48L3RleHQ+PC9zdmc+" alt="Product Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Client 1">
+                    <div class="client-info">
+                        <h4>John Doe</h4>
+                        <p>E-commerce Manager</p>
+                    </div>
+                    <blockquote>"The AI-generated descriptions increased our conversion rate by 40%. Highly recommend!"</blockquote>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Client 2">
+                    <div class="client-info">
+                        <h4>Jane Smith</h4>
+                        <p>Product Marketer</p>
+                    </div>
+                    <blockquote>"Saved us hours of writing time. The quality is outstanding and SEO-friendly."</blockquote>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Client 3">
+                    <div class="client-info">
+                        <h4>Mike Johnson</h4>
+                        <p>Online Store Owner</p>
+                    </div>
+                    <blockquote>"Our product listings now stand out. Customers love the engaging descriptions!"</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact & Follow Us</h2>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-item">
+                        <span class="icon">👤</span>
+                        <div>
+                            <h4>Name</h4>
+                            <p>Nadin Surya S</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 999466134</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nadinsurya@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Karur, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">💼</span>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/nadin-surya-subramaniam-15244a290/">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AI Product Writer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

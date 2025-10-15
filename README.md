@@ -34,4 +34,4 @@ The website is built with a **dark-glassmorphism design**, glowing effects, and 
 ---
 
 ## 🧭 Project Structure
-
+![Image Alt](https://github.com/NadinSuryaS/E-Commerce-Product-Description-Generator-PORTFOLIO/blob/8ffb904060306f656dd3da5e435d7680337577eb/portfolio.jpg)
